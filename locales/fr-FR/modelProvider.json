@@ -153,6 +153,28 @@
     "searchProviders": "Rechercher des fournisseurs...",
     "sort": "Tri personnalisé"
   },
+  "newapi": {
+    "apiKey": {
+      "desc": "Clé API fournie par la plateforme New API",
+      "placeholder": "Clé API New API",
+      "required": "La clé API est obligatoire",
+      "title": "Clé API"
+    },
+    "apiUrl": {
+      "desc": "Adresse API du service New API, généralement avec /v1",
+      "title": "Adresse API"
+    },
+    "enabled": {
+      "title": "Activer New API"
+    },
+    "models": {
+      "batchSelect": "Sélection multiple de modèles ({{count}})",
+      "fetch": "Récupérer la liste des modèles",
+      "selected": "Modèles sélectionnés",
+      "title": "Modèles disponibles"
+    },
+    "title": "New API"
+  },
   "ollama": {
     "checker": {
       "desc": "Vérifiez si l'adresse du proxy est correctement saisie",
@@ -185,6 +207,10 @@
     }
   },
   "providerModels": {
+    "batchSelect": {
+      "selected": "{{count}} modèles sélectionnés",
+      "title": "Sélection multiple"
+    },
     "config": {
       "aesGcm": "Votre clé et votre adresse de proxy seront chiffrées à l'aide de l'algorithme de chiffrement <1>AES-GCM</1>",
       "apiKey": {
@@ -267,6 +293,21 @@
           "extra": "Définir le nombre maximal de tokens pris en charge par le modèle",
           "title": "Fenêtre de contexte maximale",
           "unlimited": "Illimité"
+        },
+        "type": {
+          "extra": "Différents types de modèles possèdent des scénarios d'utilisation et des capacités distincts",
+          "options": {
+            "chat": "Conversation",
+            "embedding": "Vectorisation",
+            "image": "Génération d'images",
+            "realtime": "Dialogue en temps réel",
+            "stt": "Reconnaissance vocale",
+            "text2music": "Texte en musique",
+            "text2video": "Texte en vidéo",
+            "tts": "Synthèse vocale"
+          },
+          "placeholder": "Veuillez sélectionner un type de modèle",
+          "title": "Type de modèle"
         },
         "vision": {
           "extra": "Cette configuration n'activera que la configuration de téléchargement d'images dans l'application, la prise en charge de la reconnaissance dépend entièrement du modèle lui-même, veuillez tester la disponibilité des capacités de reconnaissance visuelle de ce modèle.",

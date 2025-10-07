@@ -153,6 +153,28 @@
     "searchProviders": "Pesquisar Provedores...",
     "sort": "Ordenação Personalizada"
   },
+  "newapi": {
+    "apiKey": {
+      "desc": "Chave API fornecida pela plataforma New API",
+      "placeholder": "Chave API do New API",
+      "required": "A chave API é obrigatória",
+      "title": "Chave API"
+    },
+    "apiUrl": {
+      "desc": "Endereço da API do serviço New API, geralmente precisa incluir /v1",
+      "title": "Endereço da API"
+    },
+    "enabled": {
+      "title": "Ativar New API"
+    },
+    "models": {
+      "batchSelect": "Selecionar modelos em lote ({{count}} itens)",
+      "fetch": "Obter lista de modelos",
+      "selected": "Modelos selecionados",
+      "title": "Modelos disponíveis"
+    },
+    "title": "New API"
+  },
   "ollama": {
     "checker": {
       "desc": "Teste se o endereço do proxy está corretamente preenchido",
@@ -185,6 +207,10 @@
     }
   },
   "providerModels": {
+    "batchSelect": {
+      "selected": "{{count}} modelos selecionados",
+      "title": "Seleção em lote"
+    },
     "config": {
       "aesGcm": "Sua chave e o endereço do proxy serão criptografados usando o algoritmo de criptografia <1>AES-GCM</1>",
       "apiKey": {
@@ -267,6 +293,21 @@
           "extra": "Configurar o número máximo de tokens suportados pelo modelo",
           "title": "Janela de contexto máxima",
           "unlimited": "Ilimitado"
+        },
+        "type": {
+          "extra": "Diferentes tipos de modelos possuem cenários de uso e capacidades diferenciadas",
+          "options": {
+            "chat": "Conversa",
+            "embedding": "Vetorização",
+            "image": "Geração de imagem",
+            "realtime": "Conversa em tempo real",
+            "stt": "Reconhecimento de voz para texto",
+            "text2music": "Texto para música",
+            "text2video": "Texto para vídeo",
+            "tts": "Síntese de voz"
+          },
+          "placeholder": "Por favor, selecione o tipo de modelo",
+          "title": "Tipo de modelo"
         },
         "vision": {
           "extra": "Esta configuração apenas habilitará a configuração de upload de imagens no aplicativo, se o reconhecimento for suportado depende do modelo em si, teste a capacidade de reconhecimento visual desse modelo.",

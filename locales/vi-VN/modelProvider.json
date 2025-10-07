@@ -153,6 +153,28 @@
     "searchProviders": "Tìm kiếm nhà cung cấp...",
     "sort": "Sắp xếp tùy chỉnh"
   },
+  "newapi": {
+    "apiKey": {
+      "desc": "Khóa API do nền tảng New API cung cấp",
+      "placeholder": "Khóa API New API",
+      "required": "Khóa API là bắt buộc",
+      "title": "Khóa API"
+    },
+    "apiUrl": {
+      "desc": "Địa chỉ API của dịch vụ New API, thường cần kèm theo /v1",
+      "title": "Địa chỉ API"
+    },
+    "enabled": {
+      "title": "Kích hoạt New API"
+    },
+    "models": {
+      "batchSelect": "Chọn nhiều mô hình ({{count}} cái)",
+      "fetch": "Lấy danh sách mô hình",
+      "selected": "Mô hình đã chọn",
+      "title": "Mô hình khả dụng"
+    },
+    "title": "New API"
+  },
   "ollama": {
     "checker": {
       "desc": "Kiểm tra địa chỉ proxy có được nhập chính xác không",
@@ -185,6 +207,10 @@
     }
   },
   "providerModels": {
+    "batchSelect": {
+      "selected": "Đã chọn {{count}} mô hình",
+      "title": "Chọn nhiều"
+    },
     "config": {
       "aesGcm": "Khóa của bạn và địa chỉ proxy sẽ được mã hóa bằng thuật toán <1>AES-GCM</1>",
       "apiKey": {
@@ -267,6 +293,21 @@
           "extra": "Cài đặt số Token tối đa mà mô hình hỗ trợ",
           "title": "Cửa sổ ngữ cảnh tối đa",
           "unlimited": "Không giới hạn"
+        },
+        "type": {
+          "extra": "Các loại mô hình khác nhau có các kịch bản sử dụng và khả năng khác biệt",
+          "options": {
+            "chat": "Đối thoại",
+            "embedding": "Vector hóa",
+            "image": "Tạo hình ảnh",
+            "realtime": "Đối thoại thời gian thực",
+            "stt": "Chuyển giọng nói thành văn bản",
+            "text2music": "Chuyển văn bản thành nhạc",
+            "text2video": "Chuyển văn bản thành video",
+            "tts": "Tổng hợp giọng nói"
+          },
+          "placeholder": "Vui lòng chọn loại mô hình",
+          "title": "Loại mô hình"
         },
         "vision": {
           "extra": "Cấu hình này chỉ mở khả năng tải lên hình ảnh trong ứng dụng, việc hỗ trợ nhận diện hoàn toàn phụ thuộc vào mô hình, xin hãy tự kiểm tra khả năng nhận diện hình ảnh của mô hình này.",
