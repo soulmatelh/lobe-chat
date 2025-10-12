@@ -1,13 +1,12 @@
 import { Input } from '@lobehub/ui';
 import { Checkbox, Form, FormInstance, Select } from 'antd';
+import { AiModelType } from 'model-bank';
 import { memo, useEffect, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import MaxTokenSlider from '@/components/MaxTokenSlider';
 import { useIsMobile } from '@/hooks/useIsMobile';
 import { ChatModelCard } from '@/types/llm';
-
-import { AiModelType } from '../../../../../../../../../packages/model-bank/src/types/aiModel';
 
 interface ModelConfigFormProps {
   idEditable?: boolean;
@@ -123,6 +122,31 @@ const ModelConfigForm = memo<ModelConfigFormProps>(
             extra={t('providerModels.item.modelConfig.reasoning.extra')}
             label={t('providerModels.item.modelConfig.reasoning.title')}
             name={['abilities', 'reasoning']}
+            valuePropName={'checked'}
+          >
+            <Checkbox />
+          </Form.Item>
+          <Form.Item
+            extra={t('providerModels.item.modelConfig.search.extra')}
+            label={t('providerModels.item.modelConfig.search.title')}
+            name={['abilities', 'search']}
+            valuePropName={'checked'}
+          >
+            <Checkbox />
+          </Form.Item>
+
+          <Form.Item
+            extra={t('providerModels.item.modelConfig.imageOutput.extra')}
+            label={t('providerModels.item.modelConfig.imageOutput.title')}
+            name={['abilities', 'imageOutput']}
+            valuePropName={'checked'}
+          >
+            <Checkbox />
+          </Form.Item>
+          <Form.Item
+            extra={t('providerModels.item.modelConfig.video.extra')}
+            label={t('providerModels.item.modelConfig.video.title')}
+            name={['abilities', 'video']}
             valuePropName={'checked'}
           >
             <Checkbox />

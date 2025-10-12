@@ -9,8 +9,10 @@ import { DEFAULT_TOOL_CONFIG } from './tool';
 import { DEFAULT_TTS_CONFIG } from './tts';
 
 export * from './agent';
+export * from './common';
 export * from './group';
 export * from './hotkey';
+export * from './knowledge';
 export * from './llm';
 export * from './systemAgent';
 export * from './tool';
